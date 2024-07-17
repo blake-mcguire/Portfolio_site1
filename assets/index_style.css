@@ -1,0 +1,607 @@
+/* LINKING FONTS */
+
+
+
+
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+         url('../fonts/Satoshi-Light.woff') format('woff'),
+         url('../fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-LightItalic';
+    src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+         url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+         url('../fonts/Satoshi-Italic.woff') format('woff'),
+         url('../fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('../fonts/Satoshi-Medium.woff') format('woff'),
+         url('../fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-MediumItalic';
+    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+         url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff'),
+         url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-BoldItalic';
+    src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+         url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Satoshi-Black';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+         url('../fonts/Satoshi-Black.woff') format('woff'),
+         url('../fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-BlackItalic';
+    src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+         url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+  }
+  /**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 300.0 to 900.0
+  */
+  @font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('../fonts/Satoshi-Variable.woff') format('woff'),
+         url('../fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+  }
+  /**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 300.0 to 900.0
+  */
+  @font-face {
+    font-family: 'Satoshi-VariableItalic';
+    src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
+         url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+  }
+/* SETTING UP PULSE ANIMATION */
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Scale up to 105% of the original size */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* KEYFRAMES FOR FADE IN ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* KEY FRAMES FOR SHINE */
+
+
+/* HEADER STYLING */
+/* NAV STYLING */
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    cursor: crosshair;
+    animation: pulse 2s infinite;
+}
+
+body{
+    background-color: #000000;
+    color:rgb(212, 212, 212)
+}
+/* NAV STYLING */
+nav{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    height: 20vh;
+    position: relative;
+}
+#logo{
+    width: 13%;
+    height: auto;
+}
+/* NAV CONTENT STYLING */
+.dropdown-content{
+    font-family: 'Satoshi-Light';
+    transform: translate(-50%);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: none;
+    z-index: 1;
+    left: 40%;
+    top:100%;
+    
+}
+
+.dropdown-trigger{
+    cursor: crosshair;
+    width: 13%;
+    position: relative;
+    left: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.dropdown-content.show{
+    display: flex;
+    left: 50%;
+    
+}
+.dropdown-trigger img{
+    cursor: crosshair;
+    width: 100%;
+    transform: rotate(180deg);
+}
+.dropdown-trigger img.flip-down{
+    transform: rotate(0deg) !important;
+}
+
+/* changing items to flex when the show is activated */
+.show{
+    display: flex;
+}
+/* Initiating pulse animation when hovering */
+.nav h3:hover{
+    animation: pulse 2s infinite;
+    cursor: crosshair;
+    
+}
+ /* MAKING THE HEADER RESPONISVE */
+@media (max-width: 768px) {
+    
+    #logo{
+        width: 40%;
+        margin: 0 auto;
+        
+    }
+    .dropdown-content{
+        left: 55%;
+        font-size: 2vw;
+        width: 3%;
+        padding: 0;
+        min-width: none;
+        flex-direction: column;
+    }
+   
+}
+@media (max-width: 1300px) {
+
+    .dropdown-content{
+        left: 70%;
+    }
+}
+
+/* STYLING FOR HERO SECTION */
+.hero{
+    height: 100%;
+    margin-left: 10vw;
+    margin-top: 5%;
+}
+
+#hello{
+    font-family: 'Satoshi-Light';
+    font-size: 4vw;
+    padding-left: 5vw;
+    
+}
+
+.intro{
+    
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid;
+    margin-right: 40vw;
+    z-index: 0;
+    ;
+}
+.intro aside{
+    animation: fadeIn 4s ease-out forwards, shineEffect 3s ease-in-out infinite;;
+}
+#img{
+    width: 25%;
+}
+#img img{
+    height: auto;
+    width: 100%;
+    
+    margin-bottom: -3.4%;
+    margin-left: -1%;
+    
+}
+
+.intro-message{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    border-top: 3px solid rgb(255, 255, 255);
+    font-family: "Satoshi-Light";
+    font-size: 2vw;
+    padding-top: -3px;
+    margin-right: 10vw;
+}
+.intro-message p{
+    animation: fadeIn 6s ease-out forwards, shineEffect 3s ease-in-out infinite;;
+}
+.intro-message img{
+    width: 25.3%;
+    margin-right: 11.8vw;
+    margin-top: -30%;
+    z-index: 1;
+}
+
+
+
+/* STYLING FOR THE ABOUT ME SECTION */
+.about-me{
+    
+    margin-top: -%;
+    margin-left: 5%;
+    
+}
+.aboutme-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutme-title img{
+    width: 13vw;
+    height: auto;
+    margin-left: 20vw;
+}
+.aboutme-title h1{
+    font-family: "Satoshi-Light" ;
+    margin-left: 15vw;
+    font-size:  2.5vw;
+}
+
+.aboutme-text img{
+    z-index: 1;
+    height: 23vw;
+    margin-top: -2vh;
+    margin-left: 9vw;
+}
+.aboutme-text p{
+    z-index: 2;
+    font-family: 'Satoshi-Light';
+    font-size: 1.5vw;
+    margin-right: 20vw;
+    margin-left: 13vw;
+    top: 10%;
+    background-color: #000000;
+}
+.aboutme-text{
+   position: relative;
+    
+    
+}
+.aboutme-text img, .aboutme-text p{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hover-gif{
+    height: 23vh;
+}
+
+
+
+.container{
+    flex-direction: row;
+    display: flex;
+    margin-top: 10%;
+}
+
+.area-panels, .tech-tree {
+    width: 50%;
+}
+.area-panels{
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+.tech-tree{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Satoshi-LightItalic';
+    font-size: 0.8vw;
+    margin-top: 3%;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.toparea1{
+    margin-bottom: -2vh;
+    margin-left: 25%;
+}
+.toparea2{
+    margin-right: 18%;
+}
+
+
+.middle-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.middle-img img{
+    width: 40vw;
+    height: auto;
+}
+.mid-left{
+    margin: 1vw;
+    margin-top: -6%;
+}
+.mid-right{
+    margin-top: -2.5vh;
+    margin-left: 1vw;
+}
+
+
+.bottom{
+    display: flex;
+    
+}
+.bottom1{
+    margin-left: 28%;
+    margin-top: -5%;
+}
+.gif-placeholder {
+    display: none; /* Initially hide the GIF placeholder */
+    /* Adjust the size as needed */
+    width: auto; /* Example width */
+    height: 100%; /* Example height, matching .hover-gif */
+    
+}
+.gif-placeholder img{
+    width: 80%;
+    height: auto;
+}
+
+.area-panels > div {
+    display: none;
+    margin-left: 20%;
+}
+.Frontend, .Backend, .Design, .UI-UX, .AI-Tooling{
+    margin-top: 10%;
+    padding: 7%;
+    font-size: 1vw;
+    font-family: 'Satoshi-Light';
+    
+    box-shadow: 0px 0px 20px 0px;
+    border-radius: 15%;
+    
+}
+.level{
+    width: 90%;
+    height: auto;
+    margin-left: -3%;
+}
+
+#initial-text{
+    margin-top: 40%;
+    margin-left: 15%;
+    font-size: 2.5vw;
+    font-family: 'Satoshi-LightItalic';
+}
+.Area{
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Satoshi-LightItalic';
+    
+}
+.area ul{
+    
+    margin-left: -20%;
+}
+
+.tech-tree h1:hover{
+    cursor:crosshair;
+    animation: pulse 2s infinite;
+}
+
+
+
+
+
+.work-container{
+    margin-top: 7%;
+}
+.header{
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satoshi-Light';
+}
+.head-img img{
+    margin-bottom: -5%;
+    margin-left: -25%;
+    width: 5%;
+    height: auto;
+}
+.head-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img2{
+    margin-top: -2%;
+    width: 20%;
+    height: auto;
+}
+.proj1-container{
+    margin-left: 5%;
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+}
+.proj1-img{
+    width: 50%;
+    height: auto;
+}
+
+
+#edgetopleft{
+    width: 70%;
+    rotate: 270deg;
+}
+#splash1{
+    width: 100%;
+    height: 70%;
+    margin-top: -50%;
+    margin-left: 30%;
+    box-shadow: 0px 0px 10px 0px;
+   
+}
+.proj1-explanation{
+    margin-top: 3%;
+    overflow: none;
+    padding-left: 2%;
+    margin-left: 10%;
+    padding-right: 10%;
+    border-left: 2px solid ;
+}
+.proj1-explanation p{
+    padding-bottom: 3%;
+    border-bottom: 1px solid ;
+}
+
+.contact{
+    font-family: 'Satoshi-Light';
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact h3{
+    font-size: 100%;
+    border-radius: 30%;
+    padding: 1%;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.links a{
+    text-decoration: none;
+}
+.links img{
+    width: 20%;
+    padding: 3%;
+}
+
+footer {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+}
+#copyright{
+    
+    
+ 
+} 
+
+#logo-bottom{
+    margin-left: 50%;
+    width: 10%;
+    height: auto;
+}
